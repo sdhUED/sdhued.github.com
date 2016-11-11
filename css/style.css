@@ -190,7 +190,7 @@ a.button.scroll:hover {
 }
 /* services */
 .services {
-	padding: 7% 0 7%;
+	padding: 5% 0 7%;
 	background: #2f2f2f    ;
 }
 .services h3{
@@ -295,7 +295,7 @@ a.button.scroll:hover {
 .portfoliO{
 	text-align:center;
 	background: #EBEBEA;
-	padding: 7% 0;
+	padding: 5% 0;
 }
 .portfoliO h3{
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -492,7 +492,7 @@ a.popup-with-zoom-anim img {
 }
 /*---team-members--*/
 .team-members{
-	padding: 7% 0;
+	padding: 5% 0;
 	background: #80d9d6;
 }
 .tm-head{
@@ -948,7 +948,7 @@ a.popup-with-zoom-anim img {
 /*---//studio--*/
 /*---clients--*/
 .clients{
-	padding: 7% 0;
+	padding: 5% 0;
 	background: #fff;
 }
 .client-head{
