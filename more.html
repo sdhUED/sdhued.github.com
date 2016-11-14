@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>More Portfolio</title>
+<link href="css/style-more.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -40
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+</head>
+<body>
+<div class="portfoliO s1" id="work"><!-- start portfoli1 -->
+   		 <div class="wrap">	
+         		 <h3>PORTFOLIO</h3>
+
+		 <div class="container"><!-- start container -->		 
+	       <!-- start h_menu -->
+           <!-- end h_menu -->
+			<!-- end smart_nav * -->
+						<ul id="filters" class="clearfix">
+							<li>
+								<span class="filter active" data-filter="app card icon web other">所有</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="app web  icon">WEB/UI/UX</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="icon ">专题页面</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="card ">宣传册</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="other">手绘/其他</span>
+							</li>
+						</ul>
+						
+						<div id="portfoliolist">
+							<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://gbys.cnki.net/" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port11.jpg" alt="Image 2" style="top: 0px;"> </a>
+									
+								</div>
+							</div>
+                            <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="part5.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port31.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://dfz.cnki.net/" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port15.jpg"  alt=""/> </a>								
+								</div>
+							</div>						
+							<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://shaoer.cnki.net/" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port12.jpg"  alt=""/> </a>								
+								</div>
+							</div>
+                            <div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="part2.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port13.jpg"  alt=""/> </a>								
+								</div>
+							</div>
+                            <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="part6.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port32.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            
+							<div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="part1.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port1.jpg"  alt=""/> </a>							
+								</div>
+							</div>
+                            <div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://szcb.cnki.net/" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port14.jpg"  alt=""/> </a>								
+								</div>
+							</div>
+							<div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://192.168.107.74:8419/BackStage/Published/MTCB/" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port25.jpg"  alt=""/> </a>
+									
+								</div>
+							</div>
+							<div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port27.jpg" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port27.jpg"  alt=""/> </a>
+									
+								</div>
+							</div>
+                            <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="part3.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port21.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="part8.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port33.jpg" alt="Image 2" style="top: 0px;"> </a>
+                        </div>
+                    </div>
+                    <div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="part9.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port37.jpg" alt="Image 2" style="top: 0px;"> </a>
+                        </div>
+                    </div>
+							<div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port26.jpg" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port26.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            
+                            <div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://pub.cnki.net/" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port28.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://gbys.cnki.net/zt-01/zt-01.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port20.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://fzcb.cnki.net/zz/zt.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port5.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio other mix_all" data-cat="other" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="part7.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port34.jpg" alt="Image 2" style="top: 0px;"> </a>
+                        </div>
+                    </div>
+                            <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://szcb.cnki.net/zt.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port22.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://pub.cnki.net/zt-01.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port6.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/port9.jpg" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port9.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+                            <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="part4.html" target="_blank" class="flipLightBox popup-with-zoom-anim"><img src="images/port23.jpg"  alt=""/> </a>
+								
+								</div>
+							</div>
+						</div>				
+		   </div>	
+												
+  </div><!-- end container -->
+		</div>
+
+		   		 <!-----cntact---->	
+   		 		<div class="contact s6" id="contact">
+					<div class="wrap">
+						<h3>CONTACT</h3>
+							<p>Please feel free if you would like to have a chat.</p>	
+				        <div class="contact_form">
+							 	 	    
+					  </div>
+					</div>
+                    <div class="logos"> 
+		   		 	<div class="wrap"> 
+		   		 	  <img src="images/contect.png"  alt=""/> </div>
+		   		 </div>
+                    
+</div>
+ <!-- scroll_top_btn -->
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>
